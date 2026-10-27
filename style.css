@@ -105,3 +105,9 @@ header img {
     flex-direction: row-reverse;
 }
 
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
