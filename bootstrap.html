@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modul 1 - Komplettering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav>
+        <div id="menu-btn">Meny</div>
+        <ul>
+          <li>
+            <a href="index.html">Start</a>
+          </li>
+          <li>
+            <a href="images.html">Bilder</a>
+          </li>
+          <li>
+            <a href="bootstrap.html">Bootstrap</a>
+          </li>
+          <li>
+            <select id="style-picker">
+              <option value="standard">Standard</option>
+              <option value="blue">Blå</option>
+              <option value="red">Röd</option>
+              <option value="green">Grön</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+
+      <header>
+        <article>
+          <img src="images/logo.jpg" alt="Logo" />
+          <h1>Modul 1</h1>
+          <aside>
+            <h2>Komplettering</h2>
+            <p>Anton Tibblin</p>
+          </aside>
+        </article>
+      </header>
+
+      <main id="bootstrap">
+        <!-- För varje sida kan ni här ändra id:t till "index", "images", "bootstrap" om ni vill -->
+        <!--
+
+                Er HTML-kod som är unik för varje sida här.
+
+            -->
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <ul class="list-group">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="images/image-placeholder.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-3">
+            <div class="col-12">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="images/image-placeholder.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/image-placeholder.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/image-placeholder.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </main>
+      <aside></aside>
+      <footer>Goran Slavnic</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
