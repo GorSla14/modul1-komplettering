@@ -112,6 +112,31 @@ footer {
     padding: 20px 0;
 }
 
+#images {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+#images figure {
+    margin: 0;
+    text-align: center;
+}
+
+#images img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#images figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
 @media (min-width: 768px) and (max-width: 990px) {
     #wrapper {
         display: grid;
@@ -192,6 +217,10 @@ footer {
     #index article {
         gap: 15px;
         padding: 15px 0;
+    }
+
+    #images {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -314,5 +343,9 @@ footer {
 
     #index article p {
         margin: 10px 0;
+    }
+
+    #images {
+        grid-template-columns: 1fr;
     }
 }
