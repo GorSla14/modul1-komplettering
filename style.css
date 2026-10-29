@@ -146,6 +146,8 @@ footer {
             "header main"
             "nav main"
             "nav footer";
+        height: 100vh;
+        overflow: hidden;
     }
 
     nav {
@@ -158,10 +160,13 @@ footer {
 
     main {
         grid-area: main;
+        min-height: 0;
+        min-width: 0;
+        overflow-y: auto;
     }
 
     #wrapper > aside {
-        grid-area: aside;
+        display: none;
     }
 
     footer {
