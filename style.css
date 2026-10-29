@@ -194,3 +194,125 @@ footer {
         padding: 15px 0;
     }
 }
+
+@media (max-width: 767px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    #wrapper > aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    header {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+
+    header article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    header img {
+        width: 70px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    header aside {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    header h1, h2, p {
+        margin: 5px;
+    }
+
+    nav {
+    padding: 0;
+    }
+
+    #menu-btn {
+        display: block;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        padding: 12px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #index article {
+        gap: 10px;
+        margin: 15px 0;
+    }
+
+    #index article img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #index article section {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+        #index article, #index article:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    #index article h2 {
+        margin: 5px 0;
+    }
+
+    #index article p {
+        margin: 10px 0;
+    }
+}
