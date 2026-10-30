@@ -1,5 +1,5 @@
 body {
-    background-color: #faf1f2;
+    background-color: #c7c6c6;
     font-family: "Century Gothic", Arial, sans-serif !important;
     margin: 0;
 }
@@ -120,24 +120,38 @@ footer {
 
 #images figure {
     margin: 0;
+    background-color: white;
     text-align: center;
+    min-width: 0;
+    width: 100%;
 }
 
 #images img {
-    width: 100%;
+    display: block;
+    width: calc(100% - 20px);
     max-width: 250px;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 #images figcaption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333333;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px;
 }
 
-@media (min-width: 768px) and (max-width: 990px) {
+@media (min-width: 991px) {
+    #bootstrap .carousel {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    #images img {
+        max-width: 280px;
+    }
+}
+
+@media (768px <= width < 991px) {
     #bootstrap > .row:first-of-type > col-md-6 {
         width: 50%;
     }
@@ -233,11 +247,24 @@ footer {
     }
 
     #images {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    }
+
+    #images figure {
+        width: 100%;
+        max-width: none;
+        justify-self: stretch;
+    }
+
+    #images img {
+        width: calc(100% - 20px);
+        max-width: none;
     }
 }
-
-@media (max-width: 767px) {
+/* Range syntax används för att undvika glapp
+   mellan brytpunkterna vid decimala viewportbredder. */
+@media (width < 768px) {
     #wrapper {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr auto auto;
@@ -381,5 +408,14 @@ footer {
 
     #images {
         grid-template-columns: 1fr;
+    }
+
+    #images figure {
+        max-width: none;
+        justify-self: stretch;
+    }
+
+    #images img {
+        max-width: none;
     }
 }
